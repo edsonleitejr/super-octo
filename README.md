@@ -1,4 +1,4 @@
-# Integrador
+# Atividade avaliativa parcial
 
 <li>Guilherme Carvalho de Faria Reis - 833206</li>
 <li>Murilo da Silva Barbosa - 816577</li>
