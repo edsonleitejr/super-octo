@@ -44,20 +44,20 @@
     <link href="signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
-<form class="form-signin">
+<form class="form-signin" action="login.php" method="post">
     <img class="mb-4" src="logo2.png" alt="" width="200" height="200">
     
     <h1 class="h3 mb-3 font-weight-normal text-secondary">Expresso API</h1>
     
     <label for="inputEmail" class="sr-only">Usuário</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Usuário" required autofocus>
+    <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Usuário" required autofocus>
     
     <label for="inputPassword" class="sr-only">Senha</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+    <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha" required>
     <div class="checkbox mb-3">
-        <a href="dash.html">Clique aqui para recuperar a sua senha</a>
+        <a href="alterar.html">Clique aqui para recuperar a sua senha</a>
     </div>
-    <a class=" btn btn-outline-danger btn-block" href="dash.html" role="button">Entrar</a>
+    <button type="submit" class="btn btn-outline-danger btn-block">Entrar</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
 </form>
 </body>
