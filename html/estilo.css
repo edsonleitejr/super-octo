@@ -1,5 +1,5 @@
 #container {
-      background-color: gray;
+      background-color:;
 }
 #container h2{
   color: black;
@@ -24,7 +24,7 @@
   color: black;
   text-align: center;
   font-family: sans-serif;
-  background-color: #dc3545;
+  background-color: #fc4b6c;
   margin: auto;
   width: 80%;
   border: 3px solid 
