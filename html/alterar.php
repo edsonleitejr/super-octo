@@ -14,14 +14,14 @@ try{
     echo "ERROR: " . $e->getMessage();
 }
 try {
-    $verifica = mysqli_query($con, "SELECT * FROM client WHERE Email = '$nom' AND Password = '$sen';");
+    $verifica = mysqli_query($con, "SELECT * FROM client WHERE Email = '$nom';");
     if (mysqli_num_rows($verifica)<=0){
         echo"<script language='javascript' type='text/javascript'>
         alert('Login e/ou senha incorretos');</script>";
         die();
     }else{
         try {
-            $query = mysqli_query($con, "UPDATE client set Password='$novasen' where Email='$nom' AND Password='$sen'");
+            $query = mysqli_query($con, "UPDATE client set Password='$novasen' where Email='$nom';");
         } catch (Exception $e) {
             echo "ERROR: " . $e->getMessage();
         }finally{
